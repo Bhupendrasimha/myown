@@ -1,0 +1,31 @@
+@import "../../../styles/variables/colors";
+@import "../../../styles/variables/mixins";
+
+.button-outline-style {
+  .btn {
+    font-size: 16px;
+    font-weight: 500;
+    min-height: 48px;
+    border-radius: 4px;
+    min-width: 100%;
+    background: $white;
+    border: 1px solid $gray-extra-light;
+    color: $theme-primary;
+    transition: all 0.5s ease-in-out;
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &.sm {
+    .btn {
+    min-height: 40px;
+    }
+  }
+}

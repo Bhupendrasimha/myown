@@ -1,0 +1,20 @@
+@import "../../../styles/variables/colors";
+@import "../../../styles/variables/mixins";
+
+.login-page-style {
+  background-color: $gray-light;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .logo-img {
+    width: 110px;
+    margin-bottom: 5px;
+  }
+
+  .info-section {
+    text-align: center;
+  }
+}

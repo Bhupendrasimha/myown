@@ -1,0 +1,39 @@
+@import "../../styles/variables/colors";
+@import "../../styles/variables/mixins";
+
+.select-role-style {
+  min-height: 147px;
+  border-radius: 4px;
+  border: 1px solid $gray-extra-light;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
+  color: #5a607f;
+  cursor: pointer;
+
+  .icon-style {
+    margin-bottom: 5px;
+  }
+
+  .description {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &.active {
+    border-color: $theme-primary;
+    color: $theme-primary;
+    background-color: $white;
+
+    .title5 {
+      color: $theme-primary;
+    }
+
+    .description {
+      color: $theme-primary;
+    }
+  }
+}

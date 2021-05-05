@@ -1,0 +1,16 @@
+
+@import "../../styles/variables/colors";
+@import "../../styles/variables/mixins";
+
+.html-editor-style {
+  .ck-editor__editable_inline {
+    min-height: 150px;
+}
+.label-style {
+  font-size: 14px;
+  color: $black;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+ 
+}

@@ -1,0 +1,75 @@
+@import "../../styles/variables/colors";
+@import "../../styles/variables/mixins";
+
+.create-content-style {
+
+  .card {
+    padding: 28px;
+    border: none;
+  
+  }
+
+  .divider {
+    height: 1px;
+    width: 100%;
+    background: $gray-extra-light;
+    margin: 40px 0 30px;
+  }
+
+  .uploading{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+  .upload-button {
+    font-size: 14px;
+    color: #5A607F;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .btn-upload {
+    background: $white;
+    color: $theme-primary;
+    border:1px solid $placeholderText;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    min-width: 102px;
+    height: 40px;
+    margin-bottom: 11px;
+  }
+
+
+  
+
+  .label-style {
+    font-size: 14px;
+    color: $black;
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+  .uploading{
+    display: flex;   
+  }
+  .line{
+    
+    height:10em;
+    background:$gray-extra-light;
+    width:1px;
+    // margin:10px 20px 10px 20px;
+  }
+  .upload-box{
+  
+    width:50%;
+    
+  }
+
+  
+}
+
+

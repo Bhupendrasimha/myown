@@ -1,0 +1,17 @@
+@import "../../styles/variables/colors";
+@import "../../styles/variables/mixins";
+
+.create-content-style {
+
+  .card {
+    padding: 28px;
+    border: none;
+  }
+
+  .divider {
+    height: 1px;
+    width: 100%;
+    background: $gray-extra-light;
+    margin: 40px 0 30px;
+  }
+}

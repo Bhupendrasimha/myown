@@ -1,0 +1,241 @@
+@import "../../styles/variables/colors";
+@import "../../styles/variables/mixins";
+
+.main-container-style {
+  background-color: $gray-light;
+  min-height: 100vh;
+  padding-top: 68px;
+  padding-left: 255px;
+
+  .navigation {
+    background: $white;
+    padding: 10px 20px;
+    box-shadow: 0 0.2px 12px rgba($black, 0.06);
+    height: 68px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+    top: 0;
+    left: 0;
+  }
+
+  .dark-style {
+    background: $theme-secondary;
+    min-height: 100%;
+  }
+
+  .content-section {
+    padding: 24px;
+  }
+
+  .row-container {
+    display: flex;
+    
+
+    .col-left {
+      min-width: 255px;
+      padding: 30px 16px;
+      position: fixed;
+      left: 0;
+      overflow: hidden;
+      top: 50;
+      bottom:50;
+      overflow-x:hidden;
+      overflow-y: scroll;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    .col-left::-webkit-scrollbar{
+      width:0;
+      height:0
+    }
+
+    .col-right {
+      width: 100%;
+    }
+
+    .navlink {
+      color: #eaecf5;
+      font-size: 14px;
+      height: 48px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      text-decoration: none;
+
+      &.active {
+        background: #f5f6fa;
+        border-radius: 4px;
+        color: $black;
+      }
+    }
+
+    .heading {
+      font-size: 12px;
+      line-height: 16px;
+      padding: 18px 16px 10px;
+      color: $placeholderText;
+    }
+
+    .icon {
+      margin-right: 20px;
+    }
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  .search-box-style {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+
+    input {
+      border: none;
+
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+    }
+
+    .btn {
+      background: none;
+      padding: 0;
+      border: none;
+
+      svg {
+        fill: $label-text;
+      }
+    }
+  }
+
+  .flex-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .profile-dropdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .dropdown-toggle {
+      background: none !important;
+      border: none;
+      color: $theme-secondary !important;
+
+      &:focus,
+      &:active {
+        outline: none !important;
+        box-shadow: none !important;
+        background: none;
+      }
+
+      &::after {
+        border: none;
+        background: url("../../assets/images/downArrow.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 14px;
+        height: 14px;
+        top: 6px;
+        position: relative;
+        margin-left: 15px;
+        opacity: 0.5;
+        transition: all 0.5s ease-in-out;
+      }
+    }
+
+    .ant-dropdown-link {
+      text-decoration: none;
+      color: #5a607f;
+      margin-left: 5px;
+
+      .icon {
+        margin-left: 5px;
+        transform: scale(0.9);
+        opacity: 0.7;
+      }
+    }
+
+    .img {
+      width: 36px;
+      height: 36px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 50px;
+      margin-right: 5px;
+
+      img {
+        width: 100%;
+        position: absolute;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  // notification
+  .notification {
+    position: relative;
+    max-width: 45px;
+    margin-right: 40px;
+
+    .bell-icon {
+      opacity: 0.7;
+      font-size: 25px;
+    }
+
+    .notification-text {
+      position: absolute;
+      top: -6px;
+      right: -5px;
+      width: 20px;
+      height: 20px;
+      background: $theme-primary;
+      color: $white;
+      font-weight: 600;
+      border-radius: 50px;
+      font-size: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  // info section
+  .info-section {
+    margin-bottom: 32px;
+
+    .title-page {
+      font-size: 24px;
+      font-weight: 600;
+      margin-top: 7px;
+    }
+
+    .back-button {
+      background: none;
+      border: none;
+      color: $label-text;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 500;
+      padding: 0;
+
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+
+      span {
+        margin-left: 4px;
+      }
+    }
+  }
+}

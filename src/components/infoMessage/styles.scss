@@ -1,0 +1,40 @@
+@import "../../styles/variables/colors";
+@import "../../styles/variables/mixins";
+
+.info-message-style {
+  position: relative;
+
+  .copyright-text {
+    font-size: 16px;
+    color: $theme-secondary;
+    margin-bottom: 10px;
+  }
+
+  .footer-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .link-item {
+      text-decoration: none;
+      color: $theme-primary;
+      font-weight: 400;
+      display: flex;
+      align-items: center;
+
+      &:after {
+        display: inline-block;
+        background: $theme-primary;
+        width: 6px;
+        height: 6px;
+        border-radius: 50px;
+        content: '';
+        margin: 0 8px;
+      }
+
+      &:last-child {
+        &:after {  display: none;}
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@import "../../../styles/variables/colors";
+@import "../../../styles/variables/mixins";
+
+.password-reset-style {
+  background-color: $gray-light;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .logo-img {
+    width: 100px;
+  }
+
+  .info-section {
+    text-align: center;
+  }
+
+  .bordertop-style {
+    border-top: 1px solid $gray-extra-light;
+    margin-top: 48px;
+    padding: 23px 0;
+    text-align: center;
+  }
+}

@@ -1,0 +1,59 @@
+@import "../../styles/variables/colors";
+@import "../../styles/variables/mixins";
+
+.create-content-style {
+
+  .card {
+    padding: 28px;
+    border: none;
+  }
+
+  .divider {
+    height: 1px;
+    width: 100%;
+    background: $gray-extra-light;
+    margin: 40px 0 30px;
+  }
+
+  .input-section {
+    display: flex;
+    align-items: flex-start;
+    margin: 20px 0 36px;
+
+    .select-style {
+      min-width: 180px;
+    }
+
+    .search-box {
+      width: 286px;
+    }
+  }
+
+  .table-info-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    .description {
+      font-weight: 600;
+      font-size: 12px;
+      margin-bottom: 0;
+    }
+
+    .img-box {
+      width: 48px;
+      height: 48px;
+      border-radius: 4px;
+      margin-right: 16px;
+      position: relative;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        object-fit: cover;
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@import "../../styles/variables/colors";
+@import "../../styles/variables/mixins";
+
+.input-style {
+  input {
+    background: $white;
+    border: 1px solid #d9e1ec;
+    height: 48px;
+    border-radius: 4px;
+    padding: 0 16px;
+    min-width: 100%;
+    font-size: 16px;
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+
+  &.input-md {
+    input {
+      height: 40px;
+    }
+  }
+
+  .label-style {
+    font-size: 14px;
+    color: $black;
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+}

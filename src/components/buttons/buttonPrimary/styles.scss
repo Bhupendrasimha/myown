@@ -1,0 +1,34 @@
+@import "../../../styles/variables/colors";
+@import "../../../styles/variables/mixins";
+
+.button-style {
+
+
+  .btn {
+    font-size: 16px;
+    font-weight: 500;
+    min-height: 48px;
+    border-radius: 4px;
+    min-width: 100%;
+    background: $theme-primary;
+    color: $white;
+    transition: all 0.5s ease-in-out;
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+      color: $white;
+    }
+
+    &:hover {
+      opacity: 0.8;
+      color: $white;
+    }
+  }
+
+  &.sm {
+    .btn {
+    min-height: 40px;
+    }
+  }
+}
